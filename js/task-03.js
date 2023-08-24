@@ -19,4 +19,4 @@ const galleryElements = images
   .join("");
 console.log(galleryElements);
 
-gallery.innerHTML = galleryElements;
+gallery.insertAdjacentHTML("beforeend", galleryElements);

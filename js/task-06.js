@@ -5,11 +5,11 @@ const attributeValue = validationInput.getAttribute("data-length");
 
 const doValidation = () => {
   if (validationInput.value.length < attributeValue) {
-    validationInput.classList.add("invalid");
     validationInput.classList.remove("valid");
+    validationInput.classList.add("invalid");
   } else {
-    validationInput.classList.add("valid");
     validationInput.classList.remove("invalid");
+    validationInput.classList.add("valid");
   }
 };
 

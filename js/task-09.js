@@ -9,9 +9,8 @@ const backgroundColored = document.querySelector("body");
 const textSpan = document.querySelector(".color");
 const bthChangeColor = document.querySelector(".change-color");
 
-let currentColor = getRandomHexColor();
-
 const changeColor = () => {
+  let currentColor = getRandomHexColor();
   backgroundColored.style.backgroundColor = currentColor;
   textSpan.innerHTML = currentColor;
 };

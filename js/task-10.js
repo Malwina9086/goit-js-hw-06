@@ -17,8 +17,8 @@ const createBoxes = () => {
   for (let i = 0; i < amount; i++) {
     const element = document.createElement("div");
     element.style.backgroundColor = getRandomHexColor();
-    element.style.width = `${30 + index * 10}px`;
-    element.style.height = `${30 + index * 10}px`;
+    element.style.width = `${30 + i * 10}px`;
+    element.style.height = `${30 + i * 10}px`;
     parentBox.append(element);
   }
 };
